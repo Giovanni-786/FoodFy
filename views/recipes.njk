@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+
+{%block head%}
+
+<link rel="stylesheet" href="/style.css">
+
+{% endblock %}
+
+
+
+{% block content %}
+
+   <section class="more-acess">
+
+ 
+
+       <div class="more-acess-content"> 
+           
+           {% for recipe in items%}
+            <div class="card-recipe" id="{{recipe.id}}">
+                <img src="{{recipe.image}}" alt="burger">
+                <h3>{{recipe.title}}</h3>
+                <p>{{recipe.author}}</p>
+
+            </div>
+
+            {% endfor %}
+
+
+                
+           {% for recipe in items%}
+            <div class="card-recipe" id="{{recipe.id}}">
+                <img src="{{recipe.image}}" alt="burger">
+                <h3>{{recipe.title}}</h3>
+                <p>{{recipe.author}}</p>
+
+            </div>
+
+            {% endfor %}        
+
+        </div>
+        
+
+    </section>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}

@@ -1,0 +1,231 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 30px;
+    border-bottom: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header nav {
+    width: 100vw;   
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    margin: 0 5%;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: #111111;
+}
+
+/* === COMEÇANDO CONTEÚDO PRINCIPAL INDEX === */
+
+section{
+
+   width: 100vw;
+   height: 60vh;
+
+   
+}
+
+
+.container{
+    
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-main{
+    width: 940px;
+    height: 366px;
+    text-align: left;
+    margin: 0 auto;
+    background: #FBDFDB;
+    border-radius: 30px;   
+    position: relative;
+    display: flex;
+
+    
+}
+
+
+.container-content{
+    display: grid;
+    align-items: center;
+    padding: 50px;
+    position: absolute;
+    margin: 5% 2%;
+    
+
+}
+
+.container-content h1 {
+    font-size: 32px;
+    line-height: 52px;
+
+}
+
+.container-content p {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-top: 5%;
+}
+
+.img-chefe {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+
+.img-chefe img {
+    width: 216px;
+    height: 300px;
+}
+
+
+/* === Começando conteúdo "MAIS ACESSADAS" === */
+
+.more-acess {
+    
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 20px;
+ 
+
+}
+
+.more-acess h1{
+    text-align: left;
+    margin: 10px auto;
+    color: #111111;
+    font-size: 24px;
+    display: block;
+    max-width: 200px;
+}
+
+
+.more-acess-content{
+    margin: 30px auto;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;    
+}
+
+
+.card-recipe{
+    cursor: pointer;
+}
+
+
+
+.card-recipe h3 {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.card-recipe img{
+    border-radius: 15px;
+    width: 300px;
+    height: 140px;
+
+}
+
+
+/* === modal-overlay === */
+
+
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    
+    
+}
+
+
+
+.modal {
+    width: 35%;
+    height: 45%;
+    background-color: white;
+    margin: 5% auto;
+    padding: 35px;
+    border-radius: 16px;
+    position: relative;
+}
+
+
+.modal-content{
+    text-align: center;
+    margin: 15px auto;
+    
+
+}
+
+.modal-content iframe {
+    border-radius: 15px;
+    width: 100%;
+    height: 20%;
+}
+
+.modal-content h3 {
+    margin-top: 10px;
+    color: #111111;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.modal-content p{
+    font-size: 18px;
+    color: #777777;
+}
+
+.close-modal {
+    display: block;
+    margin-top: 10%;
+    color: #999999;
+    font-size:  16px;
+    cursor: pointer;
+}
+
+/* === MODAL ATIVO ===*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* === FOOTER === */
+
+footer{
+    background-color: red;
+    width: 100vw;
+    height: 64px;
+    display: block;
+}
