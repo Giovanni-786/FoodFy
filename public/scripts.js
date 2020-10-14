@@ -22,7 +22,7 @@ for(let card of cardsRecipes){
         */
 
         const recipesIndex = card.getAttribute("id");
-        window.location.href = `/recipe/${recipesIndex}`
+        window.location.href = `/recipes/${recipesIndex}`
 
     })
 }

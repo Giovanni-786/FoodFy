@@ -41,28 +41,21 @@ server.get("/recipes", function(req, res){
 
 })
 
-
-
-server.get("/recipe/:index", function (req, res) {
-    const recipes = [...recipesData]; 
+server.get("/recipes/:index", function (req, res) {
+    const recipes = [...recipesData]; // Array de receitas carregadas do data.js
     const recipeIndex = req.params.index;
-  
     
-    const recipe = recipes.findIndex(function(recipe){
-        return recipe == recipeIndex
-        
-     })   
-
-     if(!recipe){
-         return res.send('index not found')
-     }
-
-   
-     /*return res.render('recipe', {item:recipesData}) */
-     console.log(recipes[recipeIndex])
-
+    const recipe = recipesData.find(function(recipe){
+        return recipe.id == recipeIndex
+    }) 
+    
+    if(!recipe){
+        return res.send("não encontrado")
+    }
+    
+    return res.render("recipe", {item:recipesData})
+    
   })
-
 
 
 

@@ -8,7 +8,7 @@ module.exports = [
         '3 kg de carne moída (escolha uma carne magra e macia)',
         '300 g de bacon moído',
         '1 ovo',
-        '3 colheres (sopa) de farinha de trigo',
+        '3 colh eres (sopa) de farinha de trigo',
         '3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador',
         '30 ml de água gelada'
       ],
