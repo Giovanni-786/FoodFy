@@ -1,0 +1,35 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.card_main{
+    text-align: center;
+    align-items: center;
+
+}
+
+
+.card-recipe img{
+    border-radius: 15px;
+}
+
+.card-recipe h2 {
+    margin-top: 1.6rem;
+    font-size: 36px;
+}
+
+.card-recipe p {
+    font-size: 24px;
+    color: #777777;
+}
+

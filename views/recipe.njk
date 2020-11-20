@@ -1,21 +1,47 @@
 {% extends "layout.njk" %}
 
 
+{% block head%}
+
+<link rel="stylesheet" href="/recipe.css">
+
+{% endblock %}
+
 
 {% block content %}
 
 
-       <div class="more-acess-content"> 
-           
+       <div class="card_main"> 
            
             <div class="card-recipe" id="{{item.id}}">
                 <img src="{{item.image}}" alt="image">
-                <h3>{{item.title}}</h3>
+                <h2>{{item.title}}</h3>
                 <p>{{item.author}}</p>
-                <h1></h1>
-
+                
             </div>
 
+        <div class="card_ingredients">
+        
+        <div class="card_ingredients_content">
+
+        <ul>
+           
+            <li>{{item.ingredients[0] }} </li>
+            <li>{{item.ingredients[1] }} </li>
+            <li>{{item.ingredients[2] }} </li>
+            <li>{{item.ingredients[3] }} </li>
+            <li>{{item.ingredients[4] }} </li>
+            <li>{{item.ingredients[5] }} </li>
+                       
+        </ul>
+        </div>
+
+        
+
+        </div>    
+
+
+        
            
 
 {% endblock %}

@@ -50,10 +50,10 @@ server.get("/recipes/:index", function (req, res) {
     }) 
     
     if(!recipe){
-        return res.send("não encontrado")
+        return res.send("receita não encontrada")
     }
     
-    return res.render("recipe", {item:recipesData})
+    return res.render("recipe", {item:recipe})
     
   })
 
