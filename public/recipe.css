@@ -11,6 +11,9 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+span{
+    cursor: pointer;
+}
 
 .card_main{
     text-align: center;
@@ -33,3 +36,94 @@ body{
     color: #777777;
 }
 
+.card_ingredients_content {
+    text-align: left;
+    margin-left: 15%;
+}
+
+
+.card_ingredients_content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.card_ingredients_content_title {
+    display: flex;
+    align-items: center;
+}
+
+.card_ingredients_content_title span {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+    margin: 10px;
+}
+
+
+.preparation_mod {
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 1.6rem;
+}
+
+.preparation_mod_title {
+    display: flex;
+    align-items: center;
+} 
+
+
+.preparation_mod_title h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.preparation_mod_title span {
+    font-size: 12px;
+    line-height: 1px;
+    color: #999999;
+    margin: 10px;
+}
+
+
+
+.informations_add {
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 1.6rem;
+}
+
+.informations_add_title {
+    display: flex;
+    align-items: center;
+} 
+
+
+.informations_add_title h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.informations_add_title span {
+    font-size: 12px;
+    line-height: 1px;
+    color: #999999;
+    margin: 10px;
+}
+
+
+/* HIDE AND SHOW */
+
+ul.hide{
+    visibility: hidden;
+}
+
+.preparation_mod_content div.hide{
+    visibility: hidden;
+}
+
+.informations_add_content p.hide{
+    visibility: hidden;
+}

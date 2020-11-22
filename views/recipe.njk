@@ -10,8 +10,8 @@
 
 {% block content %}
 
-
-       <div class="card_main"> 
+<section>
+    <div class="card_main"> 
            
             <div class="card-recipe" id="{{item.id}}">
                 <img src="{{item.image}}" alt="image">
@@ -20,25 +20,67 @@
                 
             </div>
 
-        <div class="card_ingredients">
+    
+    <div class="card_ingredients">
         
         <div class="card_ingredients_content">
 
-        <ul>
-           
-            <li>{{item.ingredients[0] }} </li>
-            <li>{{item.ingredients[1] }} </li>
-            <li>{{item.ingredients[2] }} </li>
-            <li>{{item.ingredients[3] }} </li>
-            <li>{{item.ingredients[4] }} </li>
-            <li>{{item.ingredients[5] }} </li>
-                       
-        </ul>
+            <div class="card_ingredients_content_title">   
+                <h2>Ingredientes</h2> <span class="HideAndShow_Ingredients">ESCONDER</span> 
+            </div>
+
+                <ul>
+                {% for items in item.ingredients %}
+                    <li>{{items}}</li>
+                {% endfor %}
+                </ul>
+            
+        </div>        
+
+    </div> 
+
+
+    <div class="preparation_mod">
+        <div class="preparation_mod_title">   
+            <h2>Modo de preparo</h2> <span class="HideAndShow_preparation">ESCONDER</span> 
         </div>
 
-        
+        <div class="preparation_mod_content">   
+            
+            <div>
+            {%for item in item.preparation %}
+                
+                <p></br>{{item}}</p>
+                
+            {% endfor %}
+            </div>
+        </div>
 
-        </div>    
+
+    </div>
+
+    <div class="informations_add">
+        <div class="informations_add_title">   
+            <h2>Informações adicionais</h2> <span class='HideAndShow_Information'>ESCONDER</span> 
+        </div>
+
+        <div class="informations_add_content">   
+             
+             <p></br>{{item.information}}</p>
+            
+        </div>
+
+
+    </div>
+
+
+
+</section>
+
+
+<script src="/scripts.js"></script>
+
+
 
 
         

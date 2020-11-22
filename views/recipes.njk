@@ -30,12 +30,13 @@
 
                 
            {% for recipe in items%}
+
             <div class="card-recipe" id="{{recipe.id}}">
                 <img src="{{recipe.image}}" alt="burger">
                 <h3>{{recipe.title}}</h3>
                 <p>{{recipe.author}}</p>
-
             </div>
+
 
             {% endfor %}        
 
