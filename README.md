@@ -24,6 +24,7 @@
 ## :bookmark: Sobre
 
 O <strong>FoodFy</strong> é uma aplicação Web de um site de receitas. Onde podemos aprender a fazer e preparar novas receitas, contendo todas as informaçoes necessárias.
+Esse projeto vai ser modificado e melhorado ao longo do bootcamp.
 
 Essa aplicação foi construída no Bootcamp <strong>Launchbase</strong> distribuída pela [Rocketseat](https://rocketseat.com.br/).
 
