@@ -3,7 +3,9 @@
 </p>
 
 <p align="center">
-  <b>Conecte pessoas a orfanatos e traga felicidade as crianças.</b>
+    <b>Aprenda a construir os melhores pratos
+        com receitas criadas por profissionais
+        do mundo inteiro.</b>
 </p>
 
 <br />
