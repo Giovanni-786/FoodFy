@@ -17,7 +17,7 @@
 - [Tecnologias](#tecnologias)
 - [Pré-requisitos](#pre-requisitos)
 - [Como usar](#como-usar)
-- [Como contibuir](#como-contribuir)
+
 
 <a id="sobre"></a>
 
